@@ -1,0 +1,22 @@
+{
+  "name": "minh-anh-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "images": "node scripts/images.js",
+    "dev": "vite",
+    "build": "vite build && node scripts/check.js",
+    "preview": "vite preview",
+    "check:links": "node scripts/links.js",
+    "check:a11y": "node scripts/a11y.js",
+    "verify": "npm run check:links && npm run check:a11y"
+  },
+  "devDependencies": {
+    "axe-core": "^4.14.0",
+    "html-validate": "^10.0.0",
+    "puppeteer-core": "^24.43.1",
+    "sharp": "^0.35.5",
+    "vite": "^6.4.5"
+  }
+}

@@ -1,0 +1,70 @@
+/* README §F · placeholder values. Re-check contrast if you swap them. */
+:root {
+  color-scheme: dark;
+
+  --bg: #0B0B0D;
+  --surface: #16161A;
+  --text: #F2F1EC;
+  --text-muted: #A3A39C;
+  --accent: #FF6A3D;
+  --on-accent: #0B0B0D;
+  --line: rgba(242, 241, 236, 0.12);
+  --line-strong: #6E6E75;
+  --overlay: rgba(11, 11, 13, 0.72);
+
+  --font-display: 'Space Grotesk', 'Space Grotesk Fallback', system-ui, sans-serif;
+  --font-body: 'Inter', 'Inter Fallback', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'JetBrains Mono Fallback', ui-monospace, Consolas, monospace;
+
+  --fs-display: clamp(2.75rem, 1.2rem + 7.4vw, 7.5rem);   /* 44 → 120px */
+  --fs-section: clamp(2.5rem, 1.6rem + 4.2vw, 5.5rem);    /* 40 → 88px */
+  --fs-heading: clamp(1.625rem, 1.3rem + 1.1vw, 2.5rem);  /* 26 → 40px */
+  --fs-theme: clamp(1.5rem, 1.1rem + 1.5vw, 2.25rem);     /* 24 → 36px */
+  --fs-number: clamp(2.5rem, 1.9rem + 2.2vw, 3.5rem);     /* 40 → 56px */
+  --fs-body: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);     /* 16 → 18px */
+  --fs-label: clamp(0.75rem, 0.73rem + 0.1vw, 0.8125rem); /* 12 → 13px */
+
+  --bar-h: 56px;
+  --gutter: 16px;
+  --gap: 16px;
+  --section-pad: 80px;
+  --radius: 4px;
+
+  --ease-out: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+@media (min-width: 640px) {
+  :root { --gutter: 24px; --gap: 24px; --section-pad: 104px; }
+}
+@media (min-width: 768px) {
+  :root { --bar-h: 64px; }
+}
+@media (min-width: 1024px) {
+  :root { --gutter: 32px; --gap: 32px; --section-pad: 136px; }
+}
+
+/* Metric-matched fallbacks to limit layout shift while web fonts load */
+@font-face {
+  font-family: 'Inter Fallback';
+  src: local('Arial');
+  size-adjust: 107%;
+  ascent-override: 90%;
+  descent-override: 22.5%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: 'Space Grotesk Fallback';
+  src: local('Arial');
+  size-adjust: 103%;
+  ascent-override: 95%;
+  descent-override: 28%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: 'JetBrains Mono Fallback';
+  src: local('Courier New');
+  size-adjust: 100%;
+  ascent-override: 102%;
+  descent-override: 30%;
+  line-gap-override: 0%;
+}

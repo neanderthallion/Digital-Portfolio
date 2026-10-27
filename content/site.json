@@ -1,0 +1,246 @@
+{
+  "meta": {
+    "title": "Luong Minh Anh · Data Science × Health Science",
+    "description": "Turning numbers into better health decisions.",
+    "publishDate": "27/10/2026",
+    "ogImage": "img/portrait-960.jpg"
+  },
+  "flags": {
+    "SHOW_REFERENCES": true
+  },
+  "links": {
+    "email": "anhlm1208@gmail.com",
+    "resume": "https://drive.google.com/file/d/1zlk9EUQMgGN87sJZzcWSU6_PHZECiSQi/view?usp=sharing",
+    "certificates": "https://drive.google.com/drive/folders/1wkFEKFKIk01diXATGUh1ES5cgARjeWfG?usp=sharing",
+    "github": "https://github.com/neanderthallion"
+  },
+  "nav": [
+    { "label": "About", "href": "#about" },
+    { "label": "Projects", "href": "#projects" },
+    { "label": "Innovation", "href": "#innovation" },
+    { "label": "Contact", "href": "#contact" }
+  ],
+  "hero": {
+    "label": "DATA SCIENCE × HEALTH SCIENCE",
+    "name": "Luong Minh Anh",
+    "tagline": "High school class of 2027 · Hanoi, Vietnam",
+    "theme": "Turning numbers into better health decisions.",
+    "primary": { "label": "See my projects", "href": "#projects" },
+    "secondary": { "label": "Email me", "href": "mailto:anhlm1208@gmail.com" },
+    "image": { "id": "portrait", "alt": "Portrait of Luong Minh Anh" },
+    "annotation": "Health Data Scientist Aspirant"
+  },
+  "about": {
+    "label": "01 / ABOUT",
+    "heading": "Hi, I'm Minh Anh",
+    "copy": "I am a 12th-grade student at Vinschool Times City, Hanoi, Vietnam. I am interested in how data and technology can help us better understand human health. This interest arose from the daily challenges I and those around me face, particularly academic stress and sleep, and a desire to find evidence-based solutions. Through founding The Mindful Odyssey and leading VTEC, my school's technology club, I have learned to approach problems with curiosity, responsibility, and a willingness to adjust my ideas when they don't work. I hope to hone my math, programming, and statistical analysis skills to transform data into insights that can support better health decisions.",
+    "chips": [
+      { "label": "GPA Grade 10", "value": "9.7" },
+      { "label": "GPA Grade 11", "value": "9.8" },
+      { "label": "Mathematics", "value": "9.9" },
+      { "label": "SAT", "value": "1590" },
+      { "label": "IELTS", "value": "8.0" },
+      { "label": "AP Calculus AB", "value": "5" },
+      { "label": "AP Statistics", "value": "5" },
+      { "label": "AP Computer Science A", "value": "4" },
+      { "label": "Now taking", "value": "AP Calculus BC and AP Biology" }
+    ],
+    "highlights": [
+      "Third Prize, Hanoi Mathematical Olympiad (Group A), 2026-2027",
+      "First Prize (Week 1) and Second Prize (Month 2), Road to Mount Olympia 2026, VTV",
+      "Outstanding Student of the Capital City, 2025-2026",
+      "Top 100 of about 5,000, Vinschool Well-being Initiatives, two years running"
+    ],
+    "buttons": [
+      { "label": "Download my résumé", "href": "https://drive.google.com/file/d/1zlk9EUQMgGN87sJZzcWSU6_PHZECiSQi/view?usp=sharing", "primary": true },
+      { "label": "View certificates", "href": "https://drive.google.com/drive/folders/1wkFEKFKIk01diXATGUh1ES5cgARjeWfG?usp=sharing" }
+    ]
+  },
+  "projects": {
+    "label": "02 / PROJECTS",
+    "heading": "Projects",
+    "subheading": "Click a card to see the details",
+    "items": [
+      { "slug": "vtec", "index": "P/01", "name": "VTEC", "image": "reinvintech", "desc": "I lead a technology club that brings students together to explore AI, robotics, and practical technology through competitions, events, and collaborative projects." },
+      { "slug": "mindful-odyssey", "index": "P/02", "name": "The Mindful Odyssey", "image": "bewellnest", "desc": "I founded a student well-being initiative addressing stress and sleep through workshops, weekly mindfulness sessions, and a school-based study of student sleep habits." },
+      { "slug": "slumbering", "index": "P/03", "name": "Slumbering", "image": "slumbering", "desc": "I built a Vietnamese-language Android app that helps students develop healthier sleep habits through small nightly goals, morning check-ins, sleep tracking, and relaxing sounds." },
+      { "slug": "ds-in-the-making", "index": "P/04", "name": "DS-in-the-making", "image": "insomnia-shap-card", "desc": "I practiced exploring public datasets with machine learning and statistical analysis to investigate how lifestyle factors relate to health outcomes." },
+      { "slug": "petite", "index": "P/05", "name": "Petite", "image": "petite", "desc": "I developed a customizable desktop pet that delivers friendly reminders, making everyday tasks more noticeable and more pleasant to deal with." },
+      { "slug": "gesture-game", "index": "P/06", "name": "Gesture-game", "image": "gesturegame-card", "desc": "I built a webcam-based game controller that uses real-time hand tracking and gesture recognition to translate hand movements into keyboard inputs." }
+    ]
+  },
+  "innovation": {
+    "label": "03 / INNOVATION",
+    "heading": "How well do students sleep, and what role might mindfulness play?",
+    "copy": "For my first research study, I surveyed students across my school and ran an eight-week pilot with BewellNest members. The study examines sleep patterns and explores whether a weekly mindfulness programme may be associated with changes in self-reported sleep.",
+    "stats": [
+      { "value": "~400", "caption": "students surveyed", "sr": "About 400 students surveyed" },
+      { "value": "~20", "caption": "pilot participants", "sr": "Around 20 pilot participants" },
+      { "value": "8", "caption": "weeks", "sr": "8 weeks" }
+    ],
+    "buttons":[
+      { "label": "See study details", "href": "#research", "primary": true },
+      { "label": "Read the paper", "href": "#research" }
+    ],
+    "image": { "id": "sample-distribution", "alt": "Bar chart of the survey sample by grade and gender, before and after the second sampling round" },
+    "annotation": ""
+  },
+  "contact": {
+    "label": "04 / CONTACT",
+    "heading": "Say hello",
+    "copy": "Thanks for visiting. If you'd like to learn more about a project or its process, I'd be happy to share more.",
+    "button": { "label": "Email me", "href": "mailto:anhlm1208@gmail.com" },
+    "references": [
+      { "name": "Mr. Hoang Minh Co", "role": "Vice Principal, Vinschool Times City Secondary and High School", "email": "v.cohm@vinschool.edu.vn" },
+      { "name": "Ms. Do Thi Hoa", "role": "Teacher, School Psychology Office, Vinschool Times City Secondary and High School", "email": "v.hoadt21@vinschool.edu.vn" },
+      { "name": "Mr. Le Van Dat", "role": "Teacher, Department of Mathematics, Vinschool Times City Secondary and High School", "email": "v.datlv3@vinschool.edu.vn" }
+    ]
+  },
+  "footer": {
+    "name": "Luong Minh Anh",
+    "backToTop": "Back to top"
+  },
+  "sharedAppIntro": "I build small, self-directed apps around problems I notice or interests I want to explore. Using AI as a learning and development aid has taught me to define the problem, shape a solution, and check generated code critically.",
+  "popups": [
+    {
+      "slug": "vtec",
+      "title": "VTEC (Vinschool Technology Club)",
+      "image": { "id": "reinvintech", "alt": "Award ceremony of Reinvintech 2026, delivered by VTEC" },
+      "roleDates": "Member of the Expertise Department, Sep 2024-Jun 2025 · President, Jun 2025-present",
+      "rows": [
+        { "label": "Why", "text": "VTEC is a student-led technology club at Vinschool. I joined to help build a community where students can explore technology together and turn what they learn into practical projects." },
+        { "label": "What I did", "list": "Judged the VinSTEM robotics challenge and led the VinSTEAM Innovations competition · Helped expand the club to The Harmony campus · Drafted the plan and co-developed content for REINVINTECH, an AI competition focused on well-being · Coordinated with teachers, sponsors, and vendors to deliver SPARKMIND Festival, featuring AI, robotics, and drones" },
+        { "label": "Results", "list": "Around 50 members aged 15-17 across two campuses · Nearly 100 registrations for REINVINTECH, with eight teams completing working products · More than 200 SPARKMIND attendees and over VND 70 million in sponsorship · 150+ VinSTEM participants · 20+ teams in VinSTEAM Innovations · Around 10 former REINVINTECH candidates later applied to join VTEC" },
+        { "image": { "id": "reinvintech", "alt": "REINVINTECH ceremony" } },
+        { "label": "Skills", "list": "Project planning · Team coordination · Event delivery · Stakeholder communication · Sponsorship coordination" },
+        { "label": "Lesson", "text": "Start with the goal everyone shares, then work toward a practical compromise." }
+      ],
+      "links": [
+        { "label": "VTEC fanpage", "href": "https://www.facebook.com/share/p/1Dy6q2RySU/" }
+      ]
+    },
+    {
+      "slug": "mindful-odyssey",
+      "title": "The Mindful Odyssey and BewellNest",
+      "image": { "id": "bewellnest", "alt": "Students at a BewellNest session" },
+      "roleDates": "Founder and leader, Dec 2024-present",
+      "rows": [
+        { "label": "Why", "text": "During exam periods, I saw friends struggling with stress and poor sleep, but there was no regular space at school to practise simple coping strategies together." },
+        { "label": "What I did", "list": "Co-led a stress-management workshop with a classmate · Started BewellNest with the School Psychology Office, offering weekly 30-minute sessions with light movement, games, and open conversation · Created content for BewellActs, a short daily physical-activity challenge · Began a sleep study to understand student sleep patterns and explore the BewellNest pilot (see Innovation)" },
+        { "label": "Results", "list": "30 workshop attendees, with 90% rating the session above 8/10 · 20-25 students at a typical BewellNest session · BewellActs reached dozens of students daily · Ranked in the Top 100 out of approximately 5,000 initiatives in Vinschool Well-being Initiatives in two consecutive years" },
+        { "label": "Skills", "list": "Initiative design · Student engagement · Workshop facilitation · Collaboration with school support staff · Communicating well-being ideas" },
+        { "label": "Lesson", "text": "A single event raises awareness. Long-term habits need a consistent space to grow." }
+      ],
+      "links": [
+        { "label": "School post", "href": "https://www.facebook.com/photo/?fbid=1141611564661023&set=pcb.1141651551323691" }
+      ]
+    },
+    {
+      "slug": "slumbering",
+      "title": "Slumbering",
+      "image": { "id": "slumbering", "alt": "Three Slumbering app screens showing nightly goals, morning check-in and the Journey screen" },
+      "roleDates": "Designed and built independently with AI assistance, Jun-Aug 2026",
+      "appIntro": true,
+      "rows": [
+        { "label": "Why", "text": "Many students know what healthy sleep habits look like but find it difficult to follow them consistently. I wanted to design a tool that makes small changes easier to practise without turning missed goals into a source of guilt." },
+        { "label": "What it does", "list": "An Android app in Vietnamese · Set small nightly goals for bedtime, winding down, or relaxation · Check in each morning · Track streaks and recent nights on the Journey screen · Earn seven badges · View bedtime charts · Play eight sleep sounds · Set three reminders · Keep all data on the device" },
+        { "label": "Design choices", "list": "A missed goal counts as feedback for the next night · Sound files download on first use to keep the app small · After feedback raised questions about the scientific basis and the number of features, I simplified the first version · Each feature has its own screen, and a short onboarding makes the app easier to understand" },
+        { "label": "Results", "list": "Shared publicly and updated in response to user feedback · Tried by several BewellNest members and other students" },
+        { "label": "Skills", "list": "Designing for a specific user group · Simplifying features from feedback · App development with AI assistance · Publishing a release" },
+        { "label": "Lesson", "text": "A smaller set of clearly explained features can be more useful than a crowded app." }
+      ],
+      "links": [
+        { "label": "GitHub", "href": "https://github.com/neanderthallion/Slumbering_v2" },
+        { "label": "Download APK", "href": "https://github.com/neanderthallion/Slumbering_v2/releases/tag/Slumbering_v2.1.2" }
+      ]
+    },
+    {
+      "slug": "ds-in-the-making",
+      "title": "DS-in-the-making",
+      "image": { "id": "insomnia-shap", "alt": "SHAP chart ranking the features most linked to insomnia in a public sleep and lifestyle dataset" },
+      "roleDates": "Self-directed projects with AI assistance, Jun 2026-present",
+      "appIntro": true,
+      "rows": [
+        { "label": "Why", "text": "Before analysing my own survey data, I wanted to practise connecting everyday habits with health-related outcomes using public datasets." },
+        {
+          "label": "What I did and results",
+          "groups": [
+            { "dataset": "Obesity dataset", "items": [
+              { "did": "Trained a Random Forest classifier to predict obesity level and evaluated it with five-fold cross-validation", "result": "About 90% accuracy" }
+            ] },
+            { "dataset": "Sleep and lifestyle dataset", "items": [
+              { "did": "Used SHAP with a Random Forest classifier to examine features linked to insomnia and sleep apnea", "result": "A ranked chart of the most influential features" }
+            ] },
+            { "dataset": "Sleep debt and screen-time dataset", "items": [
+              { "did": "Modelled how pre-bedtime screen time relates to REM sleep", "result": "A broad trend, but not reliable for individual predictions" },
+              { "did": "Used t-tests to explore whether a blue-light filter was linked to less next-day fatigue among high-brightness phone users", "result": "A line chart comparing fatigue with the filter on and off" },
+              { "did": "Compared XGBoost and Random Forest models for predicting next-day fatigue", "result": "The XGBoost model reached R² ≈ 0.83, explaining about 83% of the variation in next-day fatigue in this dataset" }
+            ] }
+          ]
+        },
+        { "label": "Skills", "list": "Data cleaning · Classification and regression models · Cross-validation · Explaining models with SHAP · t-tests" },
+        { "label": "Lesson", "text": "Public datasets often arrive tidy. Real survey responses need much more careful cleaning." }
+      ],
+      "links": [
+        { "label": "GitHub", "href": "https://github.com/neanderthallion/DS-in-the-making" }
+      ]
+    },
+    {
+      "slug": "petite",
+      "title": "Petite",
+      "image": { "id": "petite", "alt": "Petite, a pixel-art pet with a reminder speech bubble on a Windows desktop" },
+      "roleDates": "Designed and built independently with AI assistance, Jul 2026",
+      "appIntro": true,
+      "rows": [
+        { "label": "Vision", "text": "A lightweight reminder tool dressed as a desktop pet. It is noticeable enough to prompt action and friendly enough to feel less intrusive." },
+        { "label": "What it does", "list": "A pixel-art cat or dog appears on a Windows desktop with a speech bubble · Customize pets and reminder categories · Set rules for each reminder, including its message, frequency, and active days · Choose OK or Snooze to dismiss or delay a reminder · Runs in the background while keeping all data on the computer" },
+        { "label": "Design aim", "text": "Make reminders pleasant to notice, so taking action feels easier." },
+        { "label": "Results", "list": "Released on GitHub · I still use Petite to manage my own reminders" },
+        { "label": "Skills", "list": "User-focused design · Customizable reminder logic · Desktop app development with AI assistance" },
+        { "label": "Lesson", "text": "A simple tool can be useful when it addresses a specific, everyday problem." }
+      ],
+      "links": [
+        { "label": "GitHub", "href": "https://github.com/neanderthallion/Petite/releases" }
+      ]
+    },
+    {
+      "slug": "gesture-game",
+      "title": "Gesture-game",
+      "image": { "id": "gesturegame", "alt": "Demo of Gesture-game, with hand movements in front of a webcam control a game" },
+      "roleDates": "Self-directed project, Aug 2026",
+      "appIntro": true,
+      "rows": [
+        { "label": "Why", "text": "I wanted to explore a playful, practical use for real-time hand tracking." },
+        { "label": "What it does", "text": "A webcam tracks hand movements and maps selected gestures to keyboard inputs, letting users play games such as Subway Surfers without touching the keyboard." },
+        { "label": "Tools used", "list": "Python · OpenCV for the camera feed and image processing · MediaPipe for hand tracking · PyAutoGUI to send keyboard inputs" },
+        { "label": "Results", "text": "A working gesture-controlled input system that maps detected hand movements to directional keys." },
+        { "label": "Skills", "list": "Real-time hand tracking · Mapping gestures to keyboard input · Combining several Python libraries" },
+        { "label": "Lesson", "text": "A familiar technology becomes more interesting when it is applied to a clear, practical use." }
+      ],
+      "links": [
+        { "label": "GitHub", "href": "https://github.com/neanderthallion/Gesture-game" }
+      ]
+    },
+    {
+      "slug": "research",
+      "title": "Sleep quality in middle and high school students and the potential of mindfulness-based group interaction methods",
+      "image": { "id": "sample-distribution", "alt": "Bar chart of the survey sample by grade and gender, before and after the second sampling round" },
+      "rows": [
+        { "label": "Question", "text": "How well do students sleep, and what role might mindfulness play?" },
+        { "label": "Why it matters", "text": "Members of BewellNest, my mindfulness club, reported sleeping better, but I had not collected evidence to examine that impression. I found that research on adolescent sleep and mindfulness practice in Vietnam was limited, which led me to investigate sleep patterns at my school and pilot a regular mindfulness programme." },
+        { "label": "Who it helps", "list": "Vinschool students · Secondary and high school students in Vietnam, especially those who struggle with sleep · The wider research field, which has little evidence on Vietnamese adolescents" },
+        { "label": "What I did", "steps": "1. Reviewed existing studies to identify a research gap and refine the research question · 2. Drafted a research proposal and protocol for a survey and quasi-experimental pilot · 3. Prepared the questionnaire, parent consent form, and student assent form · 4. Surveyed approximately 400 students, then sampled one additional class per grade to address an initial imbalance toward younger students and girls · 5. Ran an eight-week pilot with around 20 BewellNest members, part of The Mindful Odyssey · 6. Cleaned the data and compared patterns by grade and gender" },
+        { "compare": [
+          { "label": "What it can show", "text": "How common self-reported sleep concerns are among students at my school" },
+          { "label": "What it can't show", "text": "Whether BewellNest caused any change, because the pilot is small, sleep is self-reported, and there is no comparison group" }
+        ] },
+        { "label": "Role", "text": "Lead researcher, working with one teammate under the supervision of the School Psychology Office" },
+        { "label": "Skills", "list": "Research-question development · Survey design · Consent and assent procedures · Data cleaning · Descriptive analysis and subgroup comparisons" },
+        { "label": "Lesson", "text": "Convincing evidence depends more on research design than on the amount of data." }
+      ],
+      "links": [
+        { "label": "Read the paper", "href": "#research" }
+      ]
+    }
+  ]
+}

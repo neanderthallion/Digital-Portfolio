@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.claude/
+DP_Assets/
+DP_Design/
+*.docx
+*.log
+~$*

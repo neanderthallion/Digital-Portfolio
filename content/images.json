@@ -1,0 +1,120 @@
+{
+  "portrait": {
+    "ext": "jpg",
+    "widths": [
+      480,
+      960
+    ],
+    "width": 960,
+    "height": 1280,
+    "pixelated": false
+  },
+  "sample-distribution": {
+    "ext": "png",
+    "widths": [
+      480,
+      902
+    ],
+    "width": 902,
+    "height": 560,
+    "pixelated": false
+  },
+  "sparkmind": {
+    "ext": "jpg",
+    "widths": [
+      480,
+      960,
+      1280
+    ],
+    "width": 1280,
+    "height": 960,
+    "pixelated": false
+  },
+  "reinvintech": {
+    "ext": "jpg",
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "width": 1440,
+    "height": 960,
+    "pixelated": false
+  },
+  "bewellnest": {
+    "ext": "jpg",
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "width": 1440,
+    "height": 810,
+    "pixelated": false
+  },
+  "slumbering": {
+    "ext": "jpg",
+    "widths": [
+      480,
+      960,
+      1280
+    ],
+    "width": 1280,
+    "height": 848,
+    "pixelated": false
+  },
+  "gesturegame": {
+    "ext": "jpg",
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "width": 1440,
+    "height": 518,
+    "pixelated": false
+  },
+  "gesturegame-card": {
+    "ext": "jpg",
+    "widths": [
+      480,
+      596
+    ],
+    "width": 596,
+    "height": 447,
+    "pixelated": false
+  },
+  "insomnia-shap": {
+    "ext": "png",
+    "widths": [
+      480,
+      960,
+      1200
+    ],
+    "width": 1200,
+    "height": 825,
+    "pixelated": false
+  },
+  "insomnia-shap-card": {
+    "ext": "png",
+    "widths": [
+      480,
+      960,
+      1040
+    ],
+    "width": 1040,
+    "height": 780,
+    "pixelated": false
+  },
+  "petite": {
+    "ext": "png",
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "width": 1440,
+    "height": 850,
+    "pixelated": false
+  }
+}
