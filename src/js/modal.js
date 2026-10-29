@@ -1,6 +1,8 @@
 // Project pop-ups: one native <dialog> filled from the server-rendered
 // <article id="slug"> blocks. Hash routing follows README §C.
 
+import { expandProjects } from './projects.js';
+
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
 export function initModal() {
@@ -86,6 +88,7 @@ export function initModal() {
     closingFromHistory = false;
     currentSlug = null;
     body.replaceChildren();
+    if (opener?.closest('[hidden]')) expandProjects(); // a P/05+ card collapsed behind "See more"
     if (opener && document.contains(opener)) opener.focus({ preventScroll: true });
   });
 

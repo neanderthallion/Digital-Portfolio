@@ -13,10 +13,11 @@
     "ext": "png",
     "widths": [
       480,
-      902
+      960,
+      1240
     ],
-    "width": 902,
-    "height": 560,
+    "width": 1240,
+    "height": 744,
     "pixelated": false
   },
   "sparkmind": {
@@ -60,7 +61,7 @@
       1280
     ],
     "width": 1280,
-    "height": 848,
+    "height": 638,
     "pixelated": false
   },
   "gesturegame": {

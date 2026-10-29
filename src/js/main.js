@@ -1,5 +1,6 @@
 import { initNav } from './nav.js';
 import { initModal, watchImages } from './modal.js';
+import { initMoreProjects } from './projects.js';
 
 // Section reveal: fade up once per section
 function initReveal() {
@@ -17,4 +18,5 @@ function initReveal() {
 initReveal();
 watchImages();
 initNav();
+initMoreProjects();
 initModal();

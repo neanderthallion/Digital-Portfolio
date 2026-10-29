@@ -1,63 +1,142 @@
-/* README §F · placeholder values. Re-check contrast if you swap them. */
+/* Design system "Minh Anh Portfolio" · black, white, red. One accent only.
+   Layout spacing (gutter, container, section padding) is kept from the
+   previous build on purpose: the wide margin is part of the brief. */
 :root {
   color-scheme: dark;
 
-  --bg: #0B0B0D;
-  --surface: #16161A;
-  --text: #F2F1EC;
-  --text-muted: #A3A39C;
-  --accent: #FF6A3D;
-  --on-accent: #0B0B0D;
-  --line: rgba(242, 241, 236, 0.12);
-  --line-strong: #6E6E75;
-  --overlay: rgba(11, 11, 13, 0.72);
+  /* Base palette */
+  --black: #0A0A0A;
+  --black-2: #121212;
+  --black-3: #1A1A1A;
+  --gray-800: #2A2A2A;
+  --gray-600: #6E6E6E;   /* 3.9:1 on --black · meaningful borders */
+  --gray-400: #A3A3A3;   /* 7.9:1 on --black · muted text */
+  --gray-300: #C9C9C4;
+  --white: #F4F4F1;      /* 18:1 on --black */
+  --paper: #EDEDE9;
+  --paper-2: #E1E1DC;
+  --red-500: #FF2D2D;    /* 5.3:1 on --black · accent on dark */
+  --red-600: #CC0F16;    /* 4.9:1 on --paper · accent on light */
+  --red-900: #2A0507;
 
-  --font-display: 'Space Grotesk', 'Space Grotesk Fallback', system-ui, sans-serif;
-  --font-body: 'Inter', 'Inter Fallback', system-ui, sans-serif;
+  /* Semantic · dark (default) */
+  --bg: var(--black);
+  --surface: var(--black-2);
+  --surface-2: var(--black-3);
+  --text: var(--white);
+  --text-muted: var(--gray-400);
+  --accent: var(--red-500);
+  --on-accent: var(--black);
+  --line: rgba(244, 244, 241, 0.10);
+  --line-strong: var(--gray-600);
+  --overlay: rgba(10, 10, 10, 0.94);
+  --bar-bg: rgba(10, 10, 10, 0.82);
+  --halftone-ink: var(--accent);
+
+  /* Type */
+  --font-display: 'Archivo', 'Archivo Fallback', system-ui, sans-serif;
+  --font-body: 'Geist', 'Geist Fallback', system-ui, sans-serif;
   --font-mono: 'JetBrains Mono', 'JetBrains Mono Fallback', ui-monospace, Consolas, monospace;
+  --display-stretch: 112%;
+  --display-weight: 800;
 
-  --fs-display: clamp(2.75rem, 1.2rem + 7.4vw, 7.5rem);   /* 44 → 120px */
-  --fs-section: clamp(2.5rem, 1.6rem + 4.2vw, 5.5rem);    /* 40 → 88px */
-  --fs-heading: clamp(1.625rem, 1.3rem + 1.1vw, 2.5rem);  /* 26 → 40px */
-  --fs-theme: clamp(1.5rem, 1.1rem + 1.5vw, 2.25rem);     /* 24 → 36px */
-  --fs-number: clamp(2.5rem, 1.9rem + 2.2vw, 3.5rem);     /* 40 → 56px */
-  --fs-body: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);     /* 16 → 18px */
-  --fs-label: clamp(0.75rem, 0.73rem + 0.1vw, 0.8125rem); /* 12 → 13px */
+  --fs-hero: clamp(3rem, 0.8rem + 8vw, 8rem);            /* 48 → 128px · focal name */
+  --fs-display: clamp(2.5rem, 1.4rem + 4.6vw, 5.5rem);     /* 40 → 88px */
+  --fs-section: clamp(2rem, 1.5rem + 2.4vw, 3.5rem);       /* 32 → 56px */
+  --fs-heading: clamp(1.375rem, 1.15rem + 0.8vw, 2rem);    /* 22 → 32px */
+  --fs-theme: clamp(1.0625rem, 0.95rem + 0.5vw, 1.375rem); /* 17 → 22px */
+  --fs-number: clamp(2rem, 1.6rem + 1.4vw, 2.75rem);       /* 32 → 44px */
+  --fs-body: clamp(1rem, 0.97rem + 0.12vw, 1.0625rem);     /* 16 → 17px */
+  --fs-label: clamp(0.75rem, 0.73rem + 0.1vw, 0.8125rem);  /* 12 → 13px */
 
+  --lh-display: 0.92;
+  --lh-heading: 1.1;
+  --lh-body: 1.6;
+  --tracking-display: -0.035em;
+  --tracking-heading: -0.015em;
+  --tracking-label: 0.08em;
+
+  /* Layout */
   --bar-h: 56px;
-  --gutter: 16px;
+  --gutter: 20px;
   --gap: 16px;
   --section-pad: 80px;
-  --radius: 4px;
+  --container: 1040px;
+  --radius: 2px;
+  --tap: 44px;
 
+  /* Motion */
   --ease-out: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --dur-fast: 150ms;
+  --dur-base: 200ms;
+  --dur-slow: 280ms;
+  --dur-reveal: 420ms;
+
+  /* Effects. No drop shadows: elevation = accent border + glow. */
+  --blur-bar: 12px;
+  --blur-panel: 8px;
+  --glow-accent: 0 0 0 1px var(--accent), 0 0 32px -4px rgba(255, 45, 45, 0.45);
+
+  /* Patterns: graphics and empty frames only, never behind text or on photos */
+  --grid-size: 24px;
+  --pattern-grid:
+    linear-gradient(var(--line) 1px, transparent 1px) 0 0 / var(--grid-size) var(--grid-size),
+    linear-gradient(90deg, var(--line) 1px, transparent 1px) 0 0 / var(--grid-size) var(--grid-size);
+  --halftone-size: 6px;
+  --pattern-halftone: radial-gradient(circle at center, var(--halftone-ink) 1.1px, transparent 1.6px) 0 0 / var(--halftone-size) var(--halftone-size);
+  --pattern-halftone-lg: radial-gradient(circle at center, var(--halftone-ink) 2px, transparent 2.6px) 0 0 / 10px 10px;
 }
 
 @media (min-width: 640px) {
-  :root { --gutter: 24px; --gap: 24px; --section-pad: 104px; }
+  :root { --gutter: 40px; --gap: 24px; --section-pad: 104px; }
 }
 @media (min-width: 768px) {
   :root { --bar-h: 64px; }
 }
 @media (min-width: 1024px) {
-  :root { --gutter: 32px; --gap: 32px; --section-pad: 136px; }
+  :root { --gutter: 64px; --gap: 32px; --section-pad: 112px; }
+}
+
+/* Inverted "paper" band: white page, black ink, deep red accent */
+.theme-paper {
+  color-scheme: light;
+  --bg: var(--paper);
+  --surface: var(--paper-2);
+  --surface-2: #D6D6D0;
+  --text: var(--black);
+  --text-muted: #555552;
+  --accent: var(--red-600);
+  --on-accent: var(--white);
+  --line: rgba(10, 10, 10, 0.12);
+  --line-strong: #7A7A76;
+  --overlay: rgba(237, 237, 233, 0.94);
+  --halftone-ink: var(--black);
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Custom properties resolve where they are declared, so the dot patterns are
+   re-declared wherever --halftone-ink changes (paper band, washes) */
+.theme-paper, .halftone-text, .innovation__wash, .contact__dots {
+  --pattern-halftone: radial-gradient(circle at center, var(--halftone-ink) 1.1px, transparent 1.6px) 0 0 / var(--halftone-size) var(--halftone-size);
+  --pattern-halftone-lg: radial-gradient(circle at center, var(--halftone-ink) 2px, transparent 2.6px) 0 0 / 10px 10px;
 }
 
 /* Metric-matched fallbacks to limit layout shift while web fonts load */
 @font-face {
-  font-family: 'Inter Fallback';
+  font-family: 'Geist Fallback';
   src: local('Arial');
-  size-adjust: 107%;
-  ascent-override: 90%;
-  descent-override: 22.5%;
+  size-adjust: 104%;
+  ascent-override: 92%;
+  descent-override: 24%;
   line-gap-override: 0%;
 }
 @font-face {
-  font-family: 'Space Grotesk Fallback';
+  font-family: 'Archivo Fallback';
   src: local('Arial');
-  size-adjust: 103%;
-  ascent-override: 95%;
-  descent-override: 28%;
+  size-adjust: 100%;
+  ascent-override: 92%;
+  descent-override: 24%;
   line-gap-override: 0%;
 }
 @font-face {

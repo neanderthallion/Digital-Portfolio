@@ -1,8 +1,10 @@
 // Builds optimised web copies of DP_Assets/Images into public/img and writes
 // content/images.json (dimensions + srcset widths) for the renderer.
 // Run once, and again whenever a source image changes: `npm run images`.
+// Pass job names to rebuild only those and keep the rest of the manifest:
+// `npm run images -- slumbering`.
 import sharp from 'sharp';
-import { mkdir, writeFile, stat } from 'node:fs/promises';
+import { mkdir, readFile, writeFile, stat } from 'node:fs/promises';
 import path from 'node:path';
 
 const SRC = 'DP_Assets/Images';
@@ -14,12 +16,13 @@ const MAX_BYTES = 500 * 1024;
 // extract: crop box in source pixels; pad: extend canvas (white) to reach 4:3
 const JOBS = [
   { out: 'portrait', src: 'Portrait.jpg', kind: 'photo' },
-  { out: 'sample-distribution', src: 'Sample Distribution.png', kind: 'chart',
-    extract: { left: 43, top: 21, width: 902, height: 560 } }, // drop spreadsheet grid
+  { out: 'sample-distribution', src: 'Sample Distribution.jpg', kind: 'chart',
+    extract: { left: 21, top: 66, width: 1240, height: 744 } }, // trim the white margin
   { out: 'sparkmind', src: 'Sparkmind.jpg', kind: 'photo' },
   { out: 'reinvintech', src: 'REINVINTECH.JPG', kind: 'photo' },
   { out: 'bewellnest', src: 'BewellNest.jpg', kind: 'photo' },
-  { out: 'slumbering', src: 'Slumbering.jpg', kind: 'photo'}, // drop white bands
+  { out: 'slumbering', src: 'Slumbering.jpg', kind: 'photo',
+    extract: { left: 0, top: 111, width: 1280, height: 638 } }, // drop white bands
   { out: 'gesturegame', src: 'Gesturegame.jpg', kind: 'photo'},
   { out: 'gesturegame-card', src: 'Gesturegame.jpg', kind: 'photo',
     extract: { left: 1322, top: 46, width: 596, height: 447 } }, // webcam view only
@@ -31,9 +34,12 @@ const JOBS = [
 
 async function run() {
   await mkdir(OUT, { recursive: true });
-  const manifest = {};
+  const only = process.argv.slice(2);
+  const unknown = only.filter((o) => !JOBS.some((j) => j.out === o));
+  if (unknown.length) throw new Error(`Unknown image job(s): ${unknown.join(', ')}`);
+  const manifest = only.length ? JSON.parse(await readFile('content/images.json', 'utf8')) : {};
 
-  for (const job of JOBS) {
+  for (const job of JOBS.filter((j) => !only.length || only.includes(j.out))) {
     let base = sharp(path.join(SRC, job.src)).rotate(); // honour EXIF orientation
     if (job.extract) base = base.extract(job.extract);
     if (job.padTo43) {
