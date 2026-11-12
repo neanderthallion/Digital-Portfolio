@@ -1,6 +1,7 @@
 import { initNav } from './nav.js';
 import { initModal, watchImages } from './modal.js';
 import { initMoreProjects } from './projects.js';
+import { initTheme } from './theme.js';
 
 // Section reveal: fade up once per section
 function initReveal() {
@@ -15,6 +16,7 @@ function initReveal() {
   items.forEach((el) => io.observe(el));
 }
 
+initTheme();
 initReveal();
 watchImages();
 initNav();

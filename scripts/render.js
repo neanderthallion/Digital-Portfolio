@@ -104,8 +104,14 @@ function header(site) {
   return `<a class="skip-link" href="#main">Skip to content</a>
 <header class="topbar">
   <div class="container topbar__inner">
-    <a class="topbar__mark" href="#top"><span class="topbar__dot" aria-hidden="true"></span>Minh Anh</a>
-    <button class="topbar__menu" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <a class="topbar__mark" href="#top"><span class="topbar__dot" aria-hidden="true"></span>Luong Minh Anh</a>
+    <div class="topbar__actions">
+      <button class="topbar__theme" type="button" aria-label="Switch to light theme">
+        <svg class="topbar__icon topbar__icon--sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="topbar__icon topbar__icon--moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+      </button>
+      <button class="topbar__menu" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    </div>
     <nav class="nav" id="site-nav" aria-label="Main">
       <button class="nav__close" type="button" aria-label="Close menu"><span aria-hidden="true">✕</span></button>
       <ul class="nav__list">${links}</ul>
@@ -216,6 +222,7 @@ function projects(site, images) {
 
 function innovation(site, images) {
   const n = site.innovation;
+  const copy = [].concat(n.copy).map((p) => `<p>${esc(p)}</p>`).join('');
   const stats = n.stats
     .map((s) => `<li class="stat"><span class="stat__value" aria-hidden="true">${esc(s.value)}</span><span class="stat__caption mono" aria-hidden="true">${esc(s.caption)}</span><span class="sr-only">${esc(s.sr)}</span></li>`)
     .join('');
@@ -226,7 +233,8 @@ function innovation(site, images) {
     <div class="grid">
       <div class="innovation__text">
         <h2 class="heading-xl" id="innovation-title">${esc(n.heading)}</h2>
-        <p class="body-copy">${esc(n.copy)}</p>
+        <div class="body-copy">${copy}</div>
+        ${n.note ? `<p class="body-copy innovation__note">${esc(n.note)}</p>` : ''}
         <ul class="stats">${stats}</ul>
         <div class="btn-row">${(n.buttons || [{ ...n.button, primary: true }]).map(button).join('')}</div>
       </div>
@@ -243,7 +251,7 @@ function innovation(site, images) {
 function contact(site) {
   const c = site.contact;
   const refs = site.flags.SHOW_REFERENCES
-    ? `<div class="references"><h3 class="mono references__title">References</h3><ul>${c.references
+    ? `<div class="references"><h3 class="mono references__title">Referees</h3><ul>${c.references
         .map((r) => `<li><strong>${esc(r.name)}</strong><span>${esc(r.role)}</span><a href="mailto:${esc(r.email)}">${esc(r.email)}</a></li>`)
         .join('')}</ul></div>`
     : '';
@@ -264,7 +272,7 @@ function footer(site) {
   const f = site.footer;
   return `<footer class="footer">
   <div class="container footer__inner">
-    <p class="footer__left">${esc(f.name)} · (+84)833065011 · <a href="mailto:${esc(site.links.email)}">${esc(site.links.email)}</a></p>
+    <p class="footer__left">${esc(f.name)} · ${site.links.phone ? `${esc(site.links.phone)} · ` : ''}<a href="mailto:${esc(site.links.email)}">${esc(site.links.email)}</a></p>
     <p class="footer__right">
       <a href="${esc(site.links.github)}" target="_blank" rel="noopener">GitHub${NEW_TAB}</a>
       <a href="#top">${esc(f.backToTop)}</a>

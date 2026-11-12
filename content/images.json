@@ -14,10 +14,10 @@
     "widths": [
       480,
       960,
-      1240
+      1440
     ],
-    "width": 1240,
-    "height": 744,
+    "width": 1440,
+    "height": 671,
     "pixelated": false
   },
   "sparkmind": {
@@ -42,7 +42,7 @@
     "height": 960,
     "pixelated": false
   },
-  "bewellnest": {
+  "slumbering": {
     "ext": "jpg",
     "widths": [
       480,
@@ -50,18 +50,7 @@
       1440
     ],
     "width": 1440,
-    "height": 810,
-    "pixelated": false
-  },
-  "slumbering": {
-    "ext": "jpg",
-    "widths": [
-      480,
-      960,
-      1280
-    ],
-    "width": 1280,
-    "height": 638,
+    "height": 718,
     "pixelated": false
   },
   "gesturegame": {
@@ -116,6 +105,17 @@
     ],
     "width": 1440,
     "height": 850,
+    "pixelated": false
+  },
+  "mindful-odyssey": {
+    "ext": "png",
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "width": 1440,
+    "height": 1018,
     "pixelated": false
   }
 }

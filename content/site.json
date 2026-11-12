@@ -2,15 +2,16 @@
   "meta": {
     "title": "Luong Minh Anh · Data Science × Health Science",
     "description": "Turning numbers into better health decisions.",
-    "publishDate": "27/10/2026",
-    "ogImage": "img/portrait-960.jpg"
+    "publishDate": "Nov 12, 2026",
+    "ogImage": "https://neanderthallion.github.io/Digital-Portfolio/img/portrait-960.jpg"
   },
   "flags": {
     "SHOW_REFERENCES": true
   },
   "links": {
     "email": "anhlm1208@gmail.com",
-    "resume": "https://drive.google.com/file/d/1zlk9EUQMgGN87sJZzcWSU6_PHZECiSQi/view?usp=sharing",
+    "phone": "(+84)833065011",
+    "resume": "https://drive.google.com/file/d/1EXXuCXRlksmTmOEa0BnN-MOiPHfjd_r4/view?usp=sharing",
     "certificates": "https://drive.google.com/drive/folders/1wkFEKFKIk01diXATGUh1ES5cgARjeWfG?usp=sharing",
     "github": "https://github.com/neanderthallion"
   },
@@ -36,12 +37,11 @@
     "copy": [
       "I am interested in how data and technology can help us better understand human health. This interest arose from the desire to find evidence-based solutions for challenges that those around me and I face.",
       "Through leading The Mindful Odyssey, a well-being initiative—and VTEC, my school's technology club, I have learned to approach problems with curiosity, responsibility, and a willingness to revise my ideas when they fall short.",
-      "I hope to strengthen my skills in mathematics, programming, and statistical analysis while developing the communication, critical thinking, and interdisciplinary understanding. Beyond technical competence, I want to learn to ask better questions, communicate clearly, and design solutions around people's actual needs."
+      "I hope to strengthen my skills in mathematics, programming, and statistical analysis as well as communication, critical thinking, and interdisciplinary understanding. Ultimately, I want to learn to ask better questions, communicate clearly, and design solutions around people's actual needs."
     ],
     "chips": [
       { "label": "GPA Grade 10", "value": "9.7" },
       { "label": "GPA Grade 11", "value": "9.8" },
-      { "label": "Mathematics GPA", "value": "9.9" },
       { "label": "SAT", "value": "1590" },
       { "label": "IELTS", "value": "8.0" },
       { "label": "AP Calculus AB", "value": "5" },
@@ -52,11 +52,11 @@
     "highlights": [
       "Third Prize, Hanoi Mathematical Olympiad (Group A), 2026-2027 AY",
       "First Prize (Weekly round) and Second Prize (Monthly round), Road to Mount Olympia 2026",
-      "Outstanding Student of the Capital City, 2025-2026 AY",
+      "Outstanding Student of the Capital, 2025-2026 AY",
       "Top 100 of about 5,000, Vinschool Well-being Initiatives, two years running"
     ],
     "buttons": [
-      { "label": "View Résumé", "href": "https://drive.google.com/file/d/1zlk9EUQMgGN87sJZzcWSU6_PHZECiSQi/view?usp=sharing", "primary": true },
+      { "label": "View Résumé", "href": "https://drive.google.com/file/d/1EXXuCXRlksmTmOEa0BnN-MOiPHfjd_r4/view?usp=sharing", "primary": true },
       { "label": "View certificates", "href": "https://drive.google.com/drive/folders/1wkFEKFKIk01diXATGUh1ES5cgARjeWfG?usp=sharing" }
     ]
   },
@@ -66,28 +66,29 @@
     "subheading": "Click a card to see the details",
     "items": [
       { "slug": "vtec", "index": "P/01", "name": "VTEC", "image": "reinvintech", "desc": "I lead a technology club that brings students together to explore AI, robotics, and practical technology through competitions, events, and collaborative projects." },
-      { "slug": "mindful-odyssey", "index": "P/02", "name": "The Mindful Odyssey", "image": "bewellnest", "desc": "I founded a student well-being initiative addressing stress and sleep through workshops, weekly mindfulness sessions, and a school-based study of student sleep habits." },
+      { "slug": "mindful-odyssey", "index": "P/02", "name": "The Mindful Odyssey", "image": "mindful-odyssey", "desc": "I founded a student well-being initiative addressing stress and sleep through workshops, weekly mindfulness sessions, and a school-based study of student sleep habits." },
       { "slug": "slumbering", "index": "P/03", "name": "Slumbering", "image": "slumbering", "desc": "I built a Vietnamese-language Android app that helps students develop healthier sleep habits through small nightly goals, morning check-ins, sleep tracking, and relaxing sounds." },
-      { "slug": "ds-in-the-making", "index": "P/04", "name": "DS-in-the-making", "image": "insomnia-shap-card", "desc": "I practiced exploring public datasets with machine learning and statistical analysis to investigate how lifestyle factors relate to health outcomes." },
-      { "slug": "petite", "index": "P/05", "name": "Petite", "image": "petite", "desc": "I developed a customizable desktop pet that delivers friendly reminders, making everyday tasks more noticeable and more pleasant to deal with." },
-      { "slug": "gesture-game", "index": "P/06", "name": "Gesture-game", "image": "gesturegame-card", "desc": "I built a webcam-based game controller that uses real-time hand tracking and gesture recognition to translate hand movements into keyboard inputs." }
+      { "slug": "ds-in-the-making", "index": "P/04", "name": "DS-in-the-making", "image": "insomnia-shap-card", "desc": "I practiced exploring public datasets with machine learning and statistical analysis to investigate how lifestyle factors relate to health outcomes." }
     ]
   },
   "innovation": {
     "label": "03 / INNOVATION",
     "heading": "How well do students sleep, and what role might mindfulness play?",
-    "copy": "For my first research, I surveyed students across my school and ran an eight-week pilot with BewellNest members. The study examines sleep patterns and explores whether a weekly mindfulness programme may be associated with changes in self-reported sleep.",
+    "copy": [
+      "For my first research project, I surveyed students across my school and ran an eight-week pilot program on a mindfulness-based group intervention. The study examines sleep patterns and explores whether weekly mindfulness practice may be associated with changes in self-reported sleep."
+    ],
+    "note": "Pilot analysis in progress. Final paper is due Nov 20.",
     "stats": [
-      { "value": "~400", "caption": "students surveyed", "sr": "About 400 students surveyed" },
+      { "value": "~600", "caption": "students surveyed", "sr": "About 600 students surveyed" },
       { "value": "~20", "caption": "pilot participants", "sr": "Around 20 pilot participants" },
       { "value": "8", "caption": "weeks", "sr": "8 weeks" }
     ],
     "buttons":[
       { "label": "See study details", "href": "#research", "primary": true },
-      { "label": "Read the paper", "href": "#research" }
+      { "label": "Read the paper", "href": "" }
     ],
-    "image": { "id": "sample-distribution", "alt": "Stacked bar chart of the survey sample by grade (6 to 12) and gender" },
-    "annotation": ""
+    "image": { "id": "sample-distribution", "alt": "Distribution of sleep quality scores among surveyed students (N = 343)" },
+    "annotation": "Processed scores are on a scale 1-6, with higher scores corresponding to better sleep quality."
   },
   "contact": {
     "label": "04 / CONTACT",
@@ -95,9 +96,8 @@
     "copy": "Thanks for visiting. If you'd like to learn more about a project or its process, I'd be happy to share more.",
     "button": { "label": "Email me", "href": "mailto:anhlm1208@gmail.com" },
     "references": [
-      { "name": "Mr. Hoang Minh Co", "role": "Vice Principal, Vinschool Times City Secondary and High School", "email": "v.cohm@vinschool.edu.vn" },
-      { "name": "Mrs. Do Thi Hoa", "role": "Teacher, School Psychology Office, Vinschool Times City Secondary and High School", "email": "v.hoadt21@vinschool.edu.vn" },
-      { "name": "Mr. Le Van Dat", "role": "Teacher, Department of Mathematics, Vinschool Times City Secondary and High School", "email": "v.datlv3@vinschool.edu.vn" }
+      { "name": "Ms. Nguyen Ngoc Anh", "role": "Academic Counselor, Academic Counselling Office, Vinschool Times City Secondary and High School", "email": "v.anhnn86@vinschool.edu.vn" },
+      { "name": "Mr. Le Van Dat", "role": "Teacher, Department of Mathematics, Vinschool Times City Secondary and High School", "email": "v.datlv3@vinschool.edu.vn" }      
     ]
   },
   "footer": {
@@ -109,13 +109,13 @@
     {
       "slug": "vtec",
       "title": "VTEC (Vinschool Technology Club)",
-      "image": { "id": "reinvintech", "alt": "Award ceremony of Reinvintech 2026, delivered by VTEC" },
-      "roleDates": "Member of the Expertise Department, Sep 2024-Jun 2025 · President, Jun 2025-present",
+      "image": { "id": "reinvintech", "alt": "Award ceremony of REINVINTECH 2026, delivered by VTEC" },
+      "roleDates": "Member of the Expertise Department, Sep 2024-May 2025 · President, Jul 2025-present",
       "rows": [
         { "label": "Why", "text": "VTEC is the only student-led technology club at Vinschool. I joined to help build a community where students can explore technology together and turn what they learn into practical projects." },
-        { "label": "What I did", "list": "Refereed the VinSTEM robotics challenge (Jan 2025) · Led the VinSTEAM Innovations competition and the club's booth at STEAM fair (May 2025) · Drafted the plan and co-developed content for REINVINTECH, an AI competition focused on well-being (Mar-May 2026) · Coordinated with teachers, sponsors, and vendors to deliver SPARKMIND Festival, featuring AI, robotics, and drones (May 2026)" },
+        { "label": "What I did", "list": "Refereed the VinSTEM robotics challenge (Jan 2025) · Led the VinSTEAM Innovations competition and the club's booth at STEAM fair (May 2025) · Co-developed content and led the organization of REINVINTECH, an AI competition focused on well-being (Mar-May 2026) · Coordinated with teachers, sponsors, and vendors to deliver SPARKMIND Festival, featuring AI, robotics, and drones (May 2026)" },
         { "label": "Results", "list": "Around 50 members aged 15-17 across two campuses · Nearly 100 registrations for REINVINTECH, with eight teams completing working products · More than 200 SPARKMIND attendees and over VND 70 million in sponsorship · 150+ VinSTEM participants · 20+ teams in VinSTEAM Innovations · Around 10 former REINVINTECH candidates later applied to join VTEC" },
-        { "image": { "id": "sparkmind", "alt": "SparkMind festival 2026, delivered by VTEC" } },
+        { "image": { "id": "sparkmind", "alt": "SPARKMIND festival 2026, delivered by VTEC" } },
         { "label": "Skills", "list": "Project planning · Team coordination · Event delivery · Stakeholder communication · Sponsorship coordination" },
         { "label": "Lesson", "text": "Start with the goal everyone shares, then work toward a practical compromise." }
       ],
@@ -126,11 +126,11 @@
     {
       "slug": "mindful-odyssey",
       "title": "The Mindful Odyssey",
-      "image": { "id": "bewellnest", "alt": "Students at a BewellNest session" },
+      "image": { "id": "mindful-odyssey", "alt": "The Mindful Odyssey initiative sheet: goals, the four project stages with session photos, results and a reflection, with the three members pictured" },
       "roleDates": "Founder and leader, Dec 2024-present",
       "rows": [
-        { "label": "Why", "text": "During exam periods, I saw friends struggling with stress and poor sleep, but there was no regular space at school to practise simple coping strategies together." },
-        { "label": "What I did", "list": "Co-led a stress-management workshop during exam season with two classmates (Mar 2025) · Started BewellNest with the School Psychology Office, offering weekly 30-minute sessions with mindfulness-inspired activities, light movement, and open conversation (Aug 2025) · Created content for BewellActs, a short daily physical-activity challenge (Jul 2026) · Began a sleep study to understand student sleep patterns and explore the BewellNest pilot (see Innovation)" },
+        { "label": "Why", "text": "Many students struggled with stress and poor sleep, but these issues often went unaddressed and lacked consistent support mechanisms." },
+        { "label": "What I did", "list": "Co-hosted a workshop on stress management during exam season with two classmates, helping to change students' perceptions of stress and guiding them on strategies to cope with it (Mar 2025) · Planned and organized BewellNest with the School Psychology Office, offering weekly 30-minute sessions with group sharing and mindfulness-based activities, light movement, and open conversation (Sep 2025) · Created content for BewellActs, a short daily physical-activity challenge (Jul 2026) · Began a sleep study to understand student sleep patterns and explore the BewellNest pilot (see Innovation)" },
         { "label": "Results", "list": "30 workshop attendees, with 90% rating the session above 8/10 · 20-25 students at a typical BewellNest session · BewellActs reached dozens of students daily · Ranked in the Top 100 out of approximately 5,000 initiatives in Vinschool Well-being Initiatives in two consecutive years" },
         { "label": "Skills", "list": "Initiative design · Student engagement · Workshop facilitation · Collaboration with school support staff · Communicating well-being ideas" },
         { "label": "Lesson", "text": "A single event raises awareness. Long-term habits need a consistent space to grow." }
@@ -146,7 +146,7 @@
       "roleDates": "Designed and built independently with AI assistance, Jun-Aug 2026",
       "appIntro": true,
       "rows": [
-        { "label": "Why", "text": "Many students know what healthy sleep habits look like but find it difficult to follow them consistently. I wanted to design a tool that makes small changes easier to practise without turning missed goals into a source of guilt." },
+        { "label": "Why", "text": "Many students are aware of healthy sleep habits but struggle to maintain them consistently. I wanted to design a tool that makes small changes easier, without the guilt of missing a goal." },
         { "label": "What it does", "list": "An Android app in Vietnamese · Set small nightly goals for bedtime, winding down, or relaxation · Check in each morning · Track streaks and recent nights on the Journey screen · Earn seven badges · View bedtime charts · Play eight sleep sounds · Set three reminders · Keep all data on the device" },
         { "label": "Design choices", "list": "A missed goal counts as feedback for the next night · Sound files download on first use to keep the app small · After feedback raised questions about the scientific basis and the number of features, I simplified the first version · Each feature has its own screen, and a short onboarding makes the app easier to understand" },
         { "label": "Results", "list": "Shared publicly and updated in response to user feedback · Tried by several BewellNest members and other students" },
@@ -165,7 +165,7 @@
       "roleDates": "Self-directed projects with AI assistance, Jun 2026-present",
       "appIntro": true,
       "rows": [
-        { "label": "Why", "text": "Before analysing my own survey data, I wanted to practise connecting everyday habits with health-related outcomes using public datasets." },
+        { "label": "Why", "text": "Before analyzing my own survey data, I wanted to practice connecting everyday habits with health-related outcomes using public datasets." },
         {
           "label": "What I did and results",
           "groups": [
@@ -176,7 +176,7 @@
               { "did": "Used SHAP with a Random Forest classifier to examine features linked to insomnia and sleep apnea", "result": "A ranked chart of the most influential features" }
             ] },
             { "dataset": "Sleep debt and screen-time dataset", "items": [
-              { "did": "Modelled how pre-bedtime screen time relates to REM sleep", "result": "A broad trend, but not reliable for individual predictions" },
+              { "did": "Modeled how pre-bedtime screen time relates to REM sleep", "result": "A broad negative trend, but not reliable for individual predictions" },
               { "did": "Used t-tests to explore whether a blue-light filter was linked to less next-day fatigue among high-brightness phone users", "result": "A line chart comparing fatigue with the filter on and off" },
               { "did": "Compared XGBoost and Random Forest models for predicting next-day fatigue", "result": "The XGBoost model reached R² ≈ 0.83, explaining about 83% of the variation in next-day fatigue in this dataset" }
             ] }
@@ -196,10 +196,10 @@
       "roleDates": "Designed and built independently with AI assistance, Jul 2026",
       "appIntro": true,
       "rows": [
-        { "label": "Vision", "text": "A lightweight reminder tool dressed as a desktop pet. It is noticeable enough to prompt action and friendly enough to feel less intrusive." },
+        { "label": "Vision", "text": "A lightweight reminder tool appears as a desktop pet. It is noticeable enough to prompt action and friendly enough not to feel intrusive." },
         { "label": "What it does", "list": "A pixel-art cat or dog appears on a Windows desktop with a speech bubble · Customize pets and reminder categories · Set rules for each reminder, including its message, frequency, and active days · Choose OK or Snooze to dismiss or delay a reminder · Runs in the background while keeping all data on the computer" },
         { "label": "Design aim", "text": "Make reminders pleasant to notice, so taking action feels easier." },
-        { "label": "Results", "text": "Used daily by some of my friends and I to manage our own reminders" },
+        { "label": "Results", "text": "Used daily by my friends and me to manage our reminders." },
         { "label": "Skills", "list": "User-focused design · Customizable reminder logic · Desktop app development with AI assistance" },
         { "label": "Lesson", "text": "A simple tool can be useful when it addresses a specific, everyday problem." }
       ],
@@ -210,11 +210,11 @@
     {
       "slug": "gesture-game",
       "title": "Gesture-game",
-      "image": { "id": "gesturegame", "alt": "Demo of Gesture-game, with hand movements in front of a webcam control a game" },
+      "image": { "id": "gesturegame", "alt": "Demo of Gesture-game: hand movements in front of a webcam control a game" },
       "roleDates": "Self-directed project, Aug 2026",
       "appIntro": true,
       "rows": [
-        { "label": "Why", "text": "I wanted to explore a playful, practical use for real-time hand tracking." },
+        { "label": "Why", "text": "I wanted to explore a practical use for real-time hand tracking." },
         { "label": "What it does", "text": "A webcam tracks hand movements and maps selected gestures to keyboard inputs, letting users play games such as Subway Surfers without touching the keyboard." },
         { "label": "Tools used", "list": "Python · OpenCV for the camera feed and image processing · MediaPipe for hand tracking · PyAutoGUI to send keyboard inputs" },
         { "label": "Results", "text": "A working gesture-controlled input system that maps detected hand movements to directional keys." },
@@ -227,23 +227,23 @@
     },
     {
       "slug": "research",
-      "title": "How well do students sleep, and what role might mindfulness play",
-      "image": { "id": "sample-distribution", "alt": "Stacked bar chart of the survey sample by grade (6 to 12) and gender" },
+      "title": "How well do students sleep, and what role might mindfulness play?",
+      "image": { "id": "sample-distribution", "alt": "Distribution of sleep quality scores among surveyed students (N = 343)" },
       "rows": [
-        { "label": "Topic", "text": "Sleep quality in middle and high school students and the potential of mindfulness-based group interaction methods" },
-        { "label": "Why it matters", "text": "Members of BewellNest, my mindfulness club, reported sleeping better, but I had not collected evidence to examine that impression. I found that research on adolescent sleep and mindfulness practice in Vietnam was limited, which led me to investigate sleep patterns at my school and pilot a regular mindfulness programme." },
-        { "label": "Who it helps", "list": "Vinschool students · Secondary and high school students in Vietnam, especially those who struggle with sleep · The wider research field, which has little evidence on Vietnamese adolescents" },
-        { "label": "What I did", "steps": "1. Reviewed existing studies to identify a research gap and refine the research question · 2. Drafted a research proposal and protocol for a survey and quasi-experimental pilot · 3. Prepared the questionnaire, parent consent form, and student assent form · 4. Surveyed approximately 400 students, then sampled one additional class per grade to address an initial imbalance toward younger students and girls · 5. Ran an eight-week pilot with around 20 BewellNest members, part of The Mindful Odyssey · 6. Cleaned the data and compared patterns by grade and gender" },
-        { "compare": [
-          { "label": "What it can show", "text": "How common self-reported sleep concerns are among students at my school" },
-          { "label": "What it can't show", "text": "Whether BewellNest caused any change, because the pilot is small, sleep is self-reported, and there is no comparison group" }
-        ] },
-        { "label": "Role", "text": "Lead researcher, working with one teammate under the supervision of the School Psychology Office" },
-        { "label": "Skills", "list": "Research-question development · Survey design · Consent and assent procedures · Data cleaning · Descriptive analysis and subgroup comparisons" },
-        { "label": "Lesson", "text": "Convincing evidence depends more on research design than on the amount of data." }
+        { "label": "Research topic", "text": "Sleep quality in middle and high school students and the potential of mindfulness-based group intervention" },
+        { "label": "My role", "text": "Researcher, working with one teammate under the supervision of the School Psychology Office" },
+        { "label": "Context", "list": "Sleep quality covers how well a person falls asleep, stays asleep, wakes up, and feels rested. · Biological changes during puberty shift the body toward a later bedtime, which—combined with early school start times, homework, and the use of electronic devices—interferes with getting sufficient sleep. · Poor sleep in students is linked with weaker attention, lower mood, and lower academic performance. · Mindfulness practices have been shown to improve sleep quality, but there is relatively little research on their application in school settings. · Most existing research uses older teens or university students, and relatively little uses Vietnamese school-aged samples." },
+        { "label": "Purpose", "list": "Describe the self-reported sleep quality of middle and high school students at Vinschool Times City from a behavioral perspective · Compare self-reported sleep quality by grade and gender · Examine the impact of behavioral patterns on self-reported sleep · Explore whether weekly mindfulness group sessions (BewellNest) may link to changes in self-reported sleep" },
+        { "label": "Methodology", "steps": "1. Reviewed existing studies to identify a research gap and wrote proposal and protocol · 2. Prepared the questionnaire (adapted from the Adolescent Sleep-Wake Scale), consent form and assent form · 3. Surveyed 581 students, combining convenient sampling and random sampling · 4. Ran an eight-week pilot with around 20 BewellNest members · 5. Cleaned and described the data; compared patterns by subscale, grade level, and gender." },
+        { "label": "Results", "list": "581 students participated in the survey, 343 were considered (116 male, 216 female, 11 other). The mean age was 13.77 years (SD = 1.88). · The overall sleep quality score was M = 3.94 (SD = 0.74) on a 1 to 6 scale, and the weakest subscale was Waking up. · Self-reported sleep quality did not show significant differences between grade levels. · The difference in overall sleep quality between males and females was significant, t(236.52) = 2.79, p = .006, with a small-to-medium effect (Hedges’ g = 0.32). Males reported better sleep quality. · The time it took to fall asleep had the strongest negative correlation with overall sleep quality." },
+        { "label": "Note", "text": "Pilot analysis in progress. Final paper is due Nov 20." },
+        { "label": "Implications", "list": "Schools could use a short screening tool to spot students at risk, especially on the weakest subscale. · Measures to improve sleep may focus on sleep hygiene to decrease the time it takes to fall asleep. · Students' self-reported sleep quality may not be consistent with clinical sleep quality. · The findings give a baseline for later sleep programs, including the mindfulness pilot. · The findings add local data on Vietnamese adolescents' sleep." },
+        { "label": "Limitations", "list": "The data are self-reported, so answers may be biased. · The design is cross-sectional, so it shows differences at one point in time and cannot show cause. · The sample came from one school and volunteers, so results may not generalize. · The gender groups were unequal in size, and the “other” group (n = 11) was too small to analyze. · Results are mostly descriptive, and there was no comparison group." },
+        { "label": "Future research questions", "list": "Which factors explain the difference in sleep quality across individuals? · How does sleep quality change across grades and over a school year? · Do the findings hold in other schools and regions of Vietnam?"},
+        { "label": "Learned", "list": "Research-question development · Study design · Consent and assent procedures · Data cleaning · Descriptive and inferential statistics" }
       ],
       "links": [
-        { "label": "Read the paper", "href": "#research" }
+        { "label": "Read the paper", "href": "" }
       ]
     }
   ]

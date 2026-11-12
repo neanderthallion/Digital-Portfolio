@@ -16,13 +16,12 @@ const MAX_BYTES = 500 * 1024;
 // extract: crop box in source pixels; pad: extend canvas (white) to reach 4:3
 const JOBS = [
   { out: 'portrait', src: 'Portrait.jpg', kind: 'photo' },
-  { out: 'sample-distribution', src: 'Sample Distribution.jpg', kind: 'chart',
-    extract: { left: 21, top: 66, width: 1240, height: 744 } }, // trim the white margin
+  { out: 'sample-distribution', src: 'Result.jpg', kind: 'chart',
+    extract: { left: 20, top: 20, width: 2280, height: 1062 } }, // drop the rounded card border
   { out: 'sparkmind', src: 'Sparkmind.jpg', kind: 'photo' },
   { out: 'reinvintech', src: 'REINVINTECH.JPG', kind: 'photo' },
-  { out: 'bewellnest', src: 'BewellNest.jpg', kind: 'photo' },
-  { out: 'slumbering', src: 'Slumbering.jpg', kind: 'photo',
-    extract: { left: 0, top: 111, width: 1280, height: 638 } }, // drop white bands
+  { out: 'mindful-odyssey', src: 'The Mindful Odyssey.png', kind: 'chart' }, // poster: keep text crisp
+  { out: 'slumbering', src: 'Slumbering.svg', kind: 'photo', density: 144 }, // rasterise SVG sharply
   { out: 'gesturegame', src: 'Gesturegame.jpg', kind: 'photo'},
   { out: 'gesturegame-card', src: 'Gesturegame.jpg', kind: 'photo',
     extract: { left: 1322, top: 46, width: 596, height: 447 } }, // webcam view only
@@ -40,7 +39,7 @@ async function run() {
   const manifest = only.length ? JSON.parse(await readFile('content/images.json', 'utf8')) : {};
 
   for (const job of JOBS.filter((j) => !only.length || only.includes(j.out))) {
-    let base = sharp(path.join(SRC, job.src)).rotate(); // honour EXIF orientation
+    let base = sharp(path.join(SRC, job.src), job.density ? { density: job.density } : undefined).rotate(); // honour EXIF orientation
     if (job.extract) base = base.extract(job.extract);
     if (job.padTo43) {
       const { width, height } = job.extract;

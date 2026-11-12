@@ -15,8 +15,9 @@
   --white: #F4F4F1;      /* 18:1 on --black */
   --paper: #EDEDE9;
   --paper-2: #E1E1DC;
-  --red-500: #FF2D2D;    /* 5.3:1 on --black · accent on dark */
-  --red-600: #CC0F16;    /* 4.9:1 on --paper · accent on light */
+  --red-500: #fe1a1c;    /* 5.3:1 on --black · accent on dark */
+  --red-600: #e11b1c;    /* 4.4:1 on --white · large text / graphics only on light */
+  --red-700: #C41214;    /* 5.5:1 on --white, 5.0:1 on --paper, 4.6:1 on --paper-2 · accent on light */
   --red-900: #2A0507;
 
   /* Semantic · dark (default) */
@@ -105,7 +106,7 @@
   --surface-2: #D6D6D0;
   --text: var(--black);
   --text-muted: #555552;
-  --accent: var(--red-600);
+  --accent: var(--red-700);
   --on-accent: var(--white);
   --line: rgba(10, 10, 10, 0.12);
   --line-strong: #7A7A76;
@@ -115,9 +116,52 @@
   color: var(--text);
 }
 
-/* Custom properties resolve where they are declared, so the dot patterns are
-   re-declared wherever --halftone-ink changes (paper band, washes) */
-.theme-paper, .halftone-text, .innovation__wash, .contact__dots {
+/* Light theme: chosen with the top-bar switch, or from the device setting.
+   Set on <html data-theme> before first paint (see index.html). Without JS
+   the attribute is absent and the dark theme above applies. */
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: var(--white);
+  --surface: var(--paper);
+  --surface-2: var(--paper-2);
+  --text: var(--black);
+  --text-muted: #555552;   /* 7.0:1 on --white */
+  --accent: var(--red-700);
+  --on-accent: var(--white);
+  --line: rgba(10, 10, 10, 0.12);
+  --line-strong: #7A7A76;
+  --overlay: rgba(244, 244, 241, 0.94);
+  --bar-bg: rgba(244, 244, 241, 0.82);
+  --halftone-ink: var(--accent);
+}
+
+/* In the light theme the About band turns dark so it stands out from the white page */
+:root[data-theme="light"] .theme-paper {
+  color-scheme: light;
+  --bg: var(--white);
+  --surface: var(--paper);
+  --surface-2: var(--paper-2);
+  --text: var(--black);
+  --text-muted: #555552;
+  --accent: var(--red-700);
+  --on-accent: var(--white);
+  --line: rgba(10, 10, 10, 0.12);
+  --line-strong: #7A7A76;
+  --overlay: rgba(244, 244, 241, 0.94);
+  --halftone-ink: var(--accent);
+  --pattern-grid:
+    linear-gradient(var(--line) 1px, transparent 1px) 0 0 / var(--grid-size) var(--grid-size),
+    linear-gradient(90deg, var(--line) 1px, transparent 1px) 0 0 / var(--grid-size) var(--grid-size);
+}
+
+/* Custom properties resolve where they are declared, so the patterns are
+   re-declared wherever --line or --halftone-ink changes (theme, paper band, washes) */
+:root[data-theme="light"] {
+  --pattern-grid:
+    linear-gradient(var(--line) 1px, transparent 1px) 0 0 / var(--grid-size) var(--grid-size),
+    linear-gradient(90deg, var(--line) 1px, transparent 1px) 0 0 / var(--grid-size) var(--grid-size);
+}
+:root[data-theme="light"], .theme-paper, .halftone-text, .innovation__wash, .contact__dots {
   --pattern-halftone: radial-gradient(circle at center, var(--halftone-ink) 1.1px, transparent 1.6px) 0 0 / var(--halftone-size) var(--halftone-size);
   --pattern-halftone-lg: radial-gradient(circle at center, var(--halftone-ink) 2px, transparent 2.6px) 0 0 / 10px 10px;
 }

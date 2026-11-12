@@ -19,7 +19,7 @@ await server.listen();
 const base = 'http://localhost:4174/';
 
 const browser = await puppeteer.launch({ executablePath: CHROME, headless: true, args: ['--no-sandbox'] });
-const page = await browser.newPage();
+let page;
 let failures = 0;
 
 async function audit(label) {
@@ -34,17 +34,23 @@ async function audit(label) {
   }
 }
 
-for (const [w, h] of [[1280, 800], [375, 740]]) {
-  await page.setViewport({ width: w, height: h });
-  await page.goto(base, { waitUntil: 'networkidle0' });
-  await page.evaluate(() => document.querySelectorAll('.reveal').forEach((el) => el.classList.add('is-in')));
-  await new Promise((r) => setTimeout(r, 600)); // let the hero fade-in finish
-  await audit(`page ${w}px`);
-  for (const slug of slugs) {
-    await page.goto(`${base}#${slug}`, { waitUntil: 'networkidle0' });
-    await new Promise((r) => setTimeout(r, 400));
-    await audit(`#${slug} ${w}px`);
+// Both themes: the saved choice is set before any page script runs
+for (const theme of ['dark', 'light']) {
+  page = await browser.newPage();
+  await page.evaluateOnNewDocument((t) => localStorage.setItem('theme', t), theme);
+  for (const [w, h] of [[1280, 800], [375, 740]]) {
+    await page.setViewport({ width: w, height: h });
+    await page.goto(base, { waitUntil: 'networkidle0' });
+    await page.evaluate(() => document.querySelectorAll('.reveal').forEach((el) => el.classList.add('is-in')));
+    await new Promise((r) => setTimeout(r, 600)); // let the hero fade-in finish
+    await audit(`${theme} page ${w}px`);
+    for (const slug of slugs) {
+      await page.goto(`${base}#${slug}`, { waitUntil: 'networkidle0' });
+      await new Promise((r) => setTimeout(r, 400));
+      await audit(`${theme} #${slug} ${w}px`);
+    }
   }
+  await page.close();
 }
 
 await browser.close();

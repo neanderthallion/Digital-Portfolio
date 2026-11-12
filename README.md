@@ -299,11 +299,11 @@ All website copy below is final, approved copy from the doc. Use it **verbatim**
 | # | Card name | Card image | Hover description | Opens |
 |---|---|---|---|---|
 | P/01 | VTEC | IMG 3 · `Sparkmind.jpg` | A community of tech enthusiasts, creating value through technology | `#vtec` |
-| P/02 | The Mindful Odyssey | IMG 5 · `BewellNest.jpg` | A wellbeing initiative that delivers consistent support for students | `#mindful-odyssey` |
-| P/03 | Slumbering | IMG 6 · **[CONTENT NEEDED · image]** | A supportive sleep-habit app that helps track goals and plays sounds | `#slumbering` |
+| P/02 | The Mindful Odyssey | IMG 5 · `The Mindful Odyssey.png` | A wellbeing initiative that delivers consistent support for students | `#mindful-odyssey` |
+| P/03 | Slumbering | IMG 6 · `Slumbering.svg` | A supportive sleep-habit app that helps track goals and plays sounds | `#slumbering` |
 | P/04 | DS-in-the-making | IMG 7 · `Insomnia.png` | Practice models linking everyday habits and health outcomes | `#ds-in-the-making` |
-| P/05 | Petite | IMG 8 · `Petite.png` (cropped) | A desktop companion that makes reminders harder to ignore | `#petite` |
-| P/06 | Gesture-game | IMG 9 · **[CONTENT NEEDED · image]** | An input system letting users play games using hand gestures | `#gesture-game` |
+| P/05 | Petite | IMG 8 · `Petite.png` (cropped) | I developed a customizable desktop pet that delivers friendly reminders, making everyday tasks more noticeable and more pleasant to deal with. | `#petite` |
+| P/06 | Gesture-game | IMG 9 · **[CONTENT NEEDED · image]** | I built a webcam-based game controller that uses real-time hand tracking and gesture recognition to translate hand movements into keyboard inputs. | `#gesture-game` |
 
 ### 4 · Innovation (`#innovation`)
 
@@ -316,11 +316,11 @@ All website copy below is final, approved copy from the doc. Use it **verbatim**
 | `SectionLabel` | `03 / INNOVATION` |
 | `h2` | How well do students sleep, and what role might mindfulness play? |
 | Copy | For my first research study, I surveyed students across my school and ran an eight-week pilot with BewellNest members. The study examines sleep patterns and explores whether a weekly mindfulness programme may be associated with changes in self-reported sleep. The paper is planned for November 2026. |
-| Stat block 1 | **~400** · students surveyed (approved text · "About 400 students surveyed") |
-| Stat block 2 | **~20** · pilot participants (approved text · "Around 20 pilot participants") |
+| Stat block 1 | **~600** · students surveyed
+| Stat block 2 | **~20** · pilot participants
 | Stat block 3 | **8** · weeks |
 | Button (primary) | View the study → opens `#research` |
-| Image | IMG 2 · `Sample Distribution.png` |
+| Image | IMG 2 · `Result.jpg` |
 
 - Screen readers must hear the full approved wording ("About 400 students surveyed"). Put it in visually hidden text next to the big number
 - "Planned for November 2026" goes out of date soon. Update this line and add the paper link once published
@@ -422,7 +422,7 @@ Lists separated by "·" in the doc render as bullets.
 
 | Row | Copy |
 |---|---|
-| Image (top) | IMG 2 · `Sample Distribution.png` (before and after the second round) |
+| Image (top) | IMG 2 · `Result.jpg` (sleep quality score distribution, N = 343) |
 | Question | How well do students sleep, and what role might mindfulness play? |
 | Why it matters | Members of my mindfulness club reported sleeping better, but I had not collected evidence to examine that impression. I found that research on adolescent sleep and mindfulness practice in Vietnam was limited, which led me to investigate sleep patterns at my school and pilot a regular mindfulness programme. |
 | Who it helps | Vinschool students · Secondary and high school students in Vietnam, especially those who struggle with sleep · The wider research field, which has little evidence on Vietnamese adolescents |
@@ -454,7 +454,7 @@ Design note · show "What it can show" and "What it can't show" side by side (tw
 
 | Row | Copy |
 |---|---|
-| Image (top) | IMG 5 · `BewellNest.jpg` (consent from students shown, or faces blurred) |
+| Image (top) | IMG 5 · `The Mindful Odyssey.png` (initiative sheet) |
 | Role and dates | Founder and leader, Dec 2024–present |
 | Why | During exam periods, I saw friends struggling with stress and poor sleep, but there was no regular space at school to practise simple coping strategies together. |
 | What I did | Co-led a stress-management workshop with a classmate · Started BewellNest with the School Psychology Office, offering weekly 30-minute sessions with light movement, games, and open conversation · Created content for BewellActs, a short daily physical-activity challenge · Began a sleep study to understand student sleep patterns and explore the BewellNest pilot (see Innovation) |
@@ -469,7 +469,7 @@ Design note · show "What it can show" and "What it can't show" side by side (tw
 
 | Row | Copy |
 |---|---|
-| Image (top) | IMG 6 · three screens in one image (goals, check-in, Journey) **[CONTENT NEEDED · image]** |
+| Image (top) | IMG 6 · `Slumbering.svg` (four app screens: home, Journey, sleep charts, sounds) |
 | Role and dates | Designed and built independently with AI assistance, Jun–Aug 2026 |
 | Why | Many students know what healthy sleep habits look like but find it difficult to follow them consistently. I wanted to design a tool that makes small changes easier to practise without turning missed goals into a source of guilt. |
 | What it does | An Android app in Vietnamese · Set small nightly goals for bedtime, winding down, or relaxation · Check in each morning · Track streaks and recent nights on the Journey screen · Earn seven badges · View bedtime charts · Play eight sleep sounds · Set three reminders · Keep all data on the device |
@@ -532,6 +532,43 @@ Design note · show "What it can show" and "What it can't show" side by side (tw
 | Lesson | A familiar technology becomes more interesting when it is applied to a clear, practical use. |
 | Links | GitHub → `https://github.com/neanderthallion/Gesture-game` · **[CONTENT NEEDED · demo video]** |
 
+    {
+      "slug": "petite",
+      "title": "Petite",
+      "image": { "id": "petite", "alt": "Petite, a pixel-art pet with a reminder speech bubble on a Windows desktop" },
+      "roleDates": "Designed and built independently with AI assistance, Jul 2026",
+      "appIntro": true,
+      "rows": [
+        { "label": "Vision", "text": "A lightweight reminder tool appears as a desktop pet. It is noticeable enough to prompt action and friendly enough not to feel intrusive." },
+        { "label": "What it does", "list": "A pixel-art cat or dog appears on a Windows desktop with a speech bubble · Customize pets and reminder categories · Set rules for each reminder, including its message, frequency, and active days · Choose OK or Snooze to dismiss or delay a reminder · Runs in the background while keeping all data on the computer" },
+        { "label": "Design aim", "text": "Make reminders pleasant to notice, so taking action feels easier." },
+        { "label": "Results", "text": "Used daily by some of my friends and I to manage our own reminders" },
+        { "label": "Skills", "list": "User-focused design · Customizable reminder logic · Desktop app development with AI assistance" },
+        { "label": "Lesson", "text": "A simple tool can be useful when it addresses a specific, everyday problem." }
+      ],
+      "links": [
+        { "label": "GitHub", "href": "https://github.com/neanderthallion/Petite/releases" }
+      ]
+    },
+    {
+      "slug": "gesture-game",
+      "title": "Gesture-game",
+      "image": { "id": "gesturegame", "alt": "Demo of Gesture-game, with hand movements in front of a webcam control a game" },
+      "roleDates": "Self-directed project, Aug 2026",
+      "appIntro": true,
+      "rows": [
+        { "label": "Why", "text": "I wanted to explore a practical use for real-time hand tracking." },
+        { "label": "What it does", "text": "A webcam tracks hand movements and maps selected gestures to keyboard inputs, letting users play games such as Subway Surfers without touching the keyboard." },
+        { "label": "Tools used", "list": "Python · OpenCV for the camera feed and image processing · MediaPipe for hand tracking · PyAutoGUI to send keyboard inputs" },
+        { "label": "Results", "text": "A working gesture-controlled input system that maps detected hand movements to directional keys." },
+        { "label": "Skills", "list": "Real-time hand tracking · Mapping gestures to keyboard input · Combining several Python libraries" },
+        { "label": "Lesson", "text": "A familiar technology becomes more interesting when it is applied to a clear, practical use." }
+      ],
+      "links": [
+        { "label": "GitHub", "href": "https://github.com/neanderthallion/Gesture-game" }
+      ]
+    },
+
 ---
 
 ## J. Image and asset map
@@ -541,11 +578,11 @@ Source folder · `DP_Assets/Images/`. Use these file names exactly as the source
 | ID | Source file | Size now | Role | Used in | Action before build | Output name |
 |---|---|---|---|---|---|---|
 | IMG 1 | `Portrait.jpg` | 139 KB | Portrait | Hero | None | `portrait` |
-| IMG 2 | `Sample Distribution.png` | 29 KB | Proof image (chart) | Innovation section + Research pop-up top | Re-export as a clean chart with Before and After side by side, no spreadsheet grid | `sample-distribution` |
+| IMG 2 | `Result.jpg` | 136 KB | Proof image (chart) | Innovation section + Research pop-up top | Trim the rounded card border | `sample-distribution` |
 | IMG 3 | `Sparkmind.jpg` | 145 KB | Card image + proof image | VTEC card + VTEC pop-up top | None | `sparkmind` |
 | IMG 4 | `REINVINTECH.JPG` | 4.7 MB | Proof image | VTEC pop-up (after Results) | Compress to under 500 KB | `reinvintech` |
-| IMG 5 | `BewellNest.jpg` | 4.6 MB | Card image + proof image | Mindful Odyssey card + pop-up top | Compress to under 500 KB · consent from students shown, or blur faces | `bewellnest` |
-| IMG 6 | **[CONTENT NEEDED · image]** | · | Card image + proof image | Slumbering card + pop-up top | Three screens in one image (goals, check-in, Journey) | `slumbering` |
+| IMG 5 | `The Mindful Odyssey.png` | 986 KB | Card image + proof image | Mindful Odyssey card + pop-up top | PNG/WebP so the text stays crisp | `mindful-odyssey` |
+| IMG 6 | `Slumbering.svg` | 929 KB | Card image + proof image | Slumbering card + pop-up top | Rasterised at 144 dpi, four screens in one image | `slumbering` |
 | IMG 7 | `Insomnia.png` | 132 KB | Card image + proof image (chart) | DS-in-the-making card + pop-up top | For the card, crop to the top-ranked bars so it reads at small size. Pop-up shows the full chart | `insomnia-shap` |
 | IMG 8 | `Petite.png` | 156 KB | Card image + proof image | Petite card + pop-up top | Crop to the cat and speech bubble, remove the Pokémon sprites | `petite` |
 | IMG 9 | **[CONTENT NEEDED · image]** | · | Card image + proof image | Gesture-game card + pop-up top | Short demo. Convert GIF to muted looping MP4/WebM + still poster frame | `gesture-game` |
@@ -695,7 +732,7 @@ All other wording is unchanged.
 | Research paper link (Nov 2026) | [CONTENT NEEDED] |
 | VTEC fanpage or event post | [CONTENT NEEDED] |
 | Mindful Odyssey school post or certificate | [CONTENT NEEDED] |
-| IMG 6 Slumbering screens | [CONTENT NEEDED] |
+| IMG 6 Slumbering screens | Done (`Slumbering.svg`) |
 | IMG 9 Gesture-game demo | [CONTENT NEEDED] |
 | Gesture-game demo video | [CONTENT NEEDED] |
 | Host, domain, publish date | [CONTENT NEEDED] |
