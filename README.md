@@ -1,14 +1,12 @@
 # Luong Minh Anh · Digital Portfolio
 
-Build specification for a one-page scholarship portfolio. Source of truth for copy is `Minh_Anh_DP_Content.docx` (version of 27 Oct 2026). This README restates that copy so the build can run from this file alone.
-
-**Decisions locked with the student (27 Oct 2026)**
+Build specification for a one-page scholarship portfolio. 
 
 | Topic | Decision |
 |---|---|
-| Structure | One scrolling page, 5 sections, project details open in pop-ups. Each pop-up has its own shareable hash link (`#vtec`). This hash link is the project "detail view". No other pages |
+| Structure | One scrolling page, 5 sections, project details open in pop-ups. Each pop-up has its own shareable hash link. This hash link is the project "detail view". No other pages |
 | Project cards | Image + project name. On hover or keyboard focus, a panel slides up from the bottom, blurs the image behind it and shows a one-line description |
-| Visual direction | Dark x-ray / wireframe base (Design inspo 1–3) with the bolder type, spacing and layout polish of an agency site (David Bragg landing page). One vivid accent colour |
+| Visual direction | Dark & light x-ray / wireframe base with the bolder type, spacing and layout polish of an agency site. One vivid accent colour |
 
 ---
 

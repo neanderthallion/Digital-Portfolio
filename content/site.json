@@ -2,7 +2,7 @@
   "meta": {
     "title": "Luong Minh Anh · Data Science × Health Science",
     "description": "Turning numbers into better health decisions.",
-    "publishDate": "Nov 12, 2026",
+    "publishDate": "Nov 14, 2026",
     "ogImage": "https://neanderthallion.github.io/Digital-Portfolio/img/portrait-960.jpg"
   },
   "flags": {
@@ -53,7 +53,7 @@
       "Third Prize, Hanoi Mathematical Olympiad (Group A), 2026-2027 AY",
       "First Prize (Weekly round) and Second Prize (Monthly round), Road to Mount Olympia 2026",
       "Outstanding Student of the Capital, 2025-2026 AY",
-      "Top 100 of about 5,000, Vinschool Well-being Initiatives, two years running"
+      "Top 100 of about 5,000 Vinschool Well-being Initiatives, twice"
     ],
     "buttons": [
       { "label": "View Résumé", "href": "https://drive.google.com/file/d/1EXXuCXRlksmTmOEa0BnN-MOiPHfjd_r4/view?usp=sharing", "primary": true },
@@ -77,7 +77,7 @@
     "copy": [
       "For my first research project, I surveyed students across my school and ran an eight-week pilot program on a mindfulness-based group intervention. The study examines sleep patterns and explores whether weekly mindfulness practice may be associated with changes in self-reported sleep."
     ],
-    "note": "Pilot analysis in progress. Final paper is due Nov 20.",
+    "note": "Analysis in progress. Final paper is due Nov 20.",
     "stats": [
       { "value": "~600", "caption": "students surveyed", "sr": "About 600 students surveyed" },
       { "value": "~20", "caption": "pilot participants", "sr": "Around 20 pilot participants" },
@@ -88,7 +88,7 @@
       { "label": "Read the paper", "href": "" }
     ],
     "image": { "id": "sample-distribution", "alt": "Distribution of sleep quality scores among surveyed students (N = 343)" },
-    "annotation": "Processed scores are on a scale 1-6, with higher scores corresponding to better sleep quality."
+    "annotation": "Processed scores are on a scale 1-6, with higher scores corresponding to better self-reported sleep quality."
   },
   "contact": {
     "label": "04 / CONTACT",
@@ -235,12 +235,11 @@
         { "label": "Context", "list": "Sleep quality covers how well a person falls asleep, stays asleep, wakes up, and feels rested. · Biological changes during puberty shift the body toward a later bedtime, which—combined with early school start times, homework, and the use of electronic devices—interferes with getting sufficient sleep. · Poor sleep in students is linked with weaker attention, lower mood, and lower academic performance. · Mindfulness practices have been shown to improve sleep quality, but there is relatively little research on their application in school settings. · Most existing research uses older teens or university students, and relatively little uses Vietnamese school-aged samples." },
         { "label": "Purpose", "list": "Describe the self-reported sleep quality of middle and high school students at Vinschool Times City from a behavioral perspective · Compare self-reported sleep quality by grade and gender · Examine the impact of behavioral patterns on self-reported sleep · Explore whether weekly mindfulness group sessions (BewellNest) may link to changes in self-reported sleep" },
         { "label": "Methodology", "steps": "1. Reviewed existing studies to identify a research gap and wrote proposal and protocol · 2. Prepared the questionnaire (adapted from the Adolescent Sleep-Wake Scale), consent form and assent form · 3. Surveyed 581 students, combining convenient sampling and random sampling · 4. Ran an eight-week pilot with around 20 BewellNest members · 5. Cleaned and described the data; compared patterns by subscale, grade level, and gender." },
-        { "label": "Results", "list": "581 students participated in the survey, 343 were considered (116 male, 216 female, 11 other). The mean age was 13.77 years (SD = 1.88). · The overall sleep quality score was M = 3.94 (SD = 0.74) on a 1 to 6 scale, and the weakest subscale was Waking up. · Self-reported sleep quality did not show significant differences between grade levels. · The difference in overall sleep quality between males and females was significant, t(236.52) = 2.79, p = .006, with a small-to-medium effect (Hedges’ g = 0.32). Males reported better sleep quality. · The time it took to fall asleep had the strongest negative correlation with overall sleep quality." },
-        { "label": "Note", "text": "Pilot analysis in progress. Final paper is due Nov 20." },
+        { "label": "Results", "list": "581 students participated in the survey, 343 were considered (116 male, 216 female, 11 other). The mean age was 13.77 years (SD = 1.88). · The overall sleep quality score was M = 3.94 (SD = 0.74) on a 1 to 6 scale, and the weakest subscale was Waking up. · Self-reported sleep quality did not show significant differences between grade levels. · The difference in overall sleep quality between males and females was significant, t(236.52) = 2.79, p = .006, with a small-to-medium effect (Cohen's d = 0.32). Males reported better sleep quality. · The time it took to fall asleep had the strongest negative correlation with overall sleep quality." },
         { "label": "Implications", "list": "Schools could use a short screening tool to spot students at risk, especially on the weakest subscale. · Measures to improve sleep may focus on sleep hygiene to decrease the time it takes to fall asleep. · Students' self-reported sleep quality may not be consistent with clinical sleep quality. · The findings give a baseline for later sleep programs, including the mindfulness pilot. · The findings add local data on Vietnamese adolescents' sleep." },
         { "label": "Limitations", "list": "The data are self-reported, so answers may be biased. · The design is cross-sectional, so it shows differences at one point in time and cannot show cause. · The sample came from one school and volunteers, so results may not generalize. · The gender groups were unequal in size, and the “other” group (n = 11) was too small to analyze. · Results are mostly descriptive, and there was no comparison group." },
-        { "label": "Future research questions", "list": "Which factors explain the difference in sleep quality across individuals? · How does sleep quality change across grades and over a school year? · Do the findings hold in other schools and regions of Vietnam?"},
-        { "label": "Learned", "list": "Research-question development · Study design · Consent and assent procedures · Data cleaning · Descriptive and inferential statistics" }
+        { "label": "Future research questions", "list": "Which factors explain the difference in sleep quality across individuals? · How does sleep quality change across grades and over a school year? · Do mindfulness sessions or sleep-habit tools improve sleep quality compared with a control group?"},
+        { "label": "Learned", "list": "Research-question development · Study design · Data cleaning and data interpretation · Descriptive and inferential statistics" }
       ],
       "links": [
         { "label": "Read the paper", "href": "" }

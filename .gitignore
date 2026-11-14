@@ -3,6 +3,7 @@ dist/
 .claude/
 DP_Assets/
 DP_Design/
+README.md
 *.docx
 *.log
 ~$*
