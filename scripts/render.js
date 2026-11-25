@@ -106,7 +106,7 @@ function header(site) {
   <div class="container topbar__inner">
     <a class="topbar__mark" href="#top"><span class="topbar__dot" aria-hidden="true"></span>Luong Minh Anh</a>
     <div class="topbar__actions">
-      <button class="topbar__theme" type="button" aria-label="Switch to light theme">
+      <button class="topbar__theme" type="button" aria-label="Switch to dark theme">
         <svg class="topbar__icon topbar__icon--sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
         <svg class="topbar__icon topbar__icon--moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
       </button>
@@ -262,7 +262,7 @@ function contact(site) {
     ${label(c.label)}
     <h2 class="display" id="contact-title">${accent(c.heading, 'hello')}</h2>
     <p class="body-copy contact__copy">${esc(c.copy)}</p>
-    <div class="btn-row">${button({ ...c.button, primary: true, large: true })}</div>
+    <div class="btn-row">${button({ ...c.button, primary: true, large: true })}${(c.links || []).map((l) => button({ ...l, large: true })).join('')}</div>
     ${refs}
   </div>
 </section>`;

@@ -116,9 +116,8 @@
   color: var(--text);
 }
 
-/* Light theme: chosen with the top-bar switch, or from the device setting.
-   Set on <html data-theme> before first paint (see index.html). Without JS
-   the attribute is absent and the dark theme above applies. */
+/* Light theme: the default, unless the visitor picked dark with the top-bar
+   switch. Set on <html data-theme> before first paint (see index.html). */
 :root[data-theme="light"] {
   color-scheme: light;
   --bg: var(--white);
